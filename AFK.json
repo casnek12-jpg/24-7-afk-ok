@@ -1,0 +1,58 @@
+{
+  "server": {
+    "host": "CasOne.aternos.me",
+    "port": 62281,
+    "version": "1.21.1",
+    "auth": "offline"
+  },
+  "bot": {
+    "baseUsername": "PRO"
+  },
+  "features": {
+    "autoReconnect": {
+      "enabled": true,
+      "delay": 5000,
+      "kickDelay": 10000
+    },
+    "randomUsernameOnKick": {
+      "enabled": true,
+      "length": 4
+    },
+    "antiAfk": {
+      "enabled": true,
+      "minInterval": 5000,
+      "maxInterval": 15000,
+      "actions": {
+        "jump": true,
+        "sneak": true,
+        "lookAround": true,
+        "swingArm": true,
+        "walkRandomly": true,
+        "sprintForward": false,
+        "toggleWalk": true,
+        "mineBlockRandomly": false,
+        "placeBlockRandomly": false,
+        "useItem": false,
+        "switchHotbar": true,
+        "dropItem": false,
+        "interactWithEntity": true,
+        "openContainer": false,
+        "inventoryInteraction": true,
+        "randomSequence": true
+      }
+    },
+    "autoChat": {
+      "enabled": true,
+      "interval": 60000,
+      "messages": [
+        "Hello!",
+        "This is an AFK bot.",
+        "I'm currently AFK."
+      ]
+    },
+    "webDashboard": {
+      "enabled": true,
+      "port": 3000
+    }
+  }
+}
